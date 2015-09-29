@@ -16,10 +16,11 @@
 !/log/.keep
 /tmp
 
+#Credenciales para servidor
 hackslab.pem
 
 # Ignore application configuration
-/config/application.yml
+# /config/application.yml
 
 public/logging_hackslabs.out
 .DS_Store
