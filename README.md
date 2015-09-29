@@ -1,6 +1,6 @@
-### Documentación de Scraper de Licitaciones y Órdenes de Compra
+## Documentación de Scraper de Licitaciones y Órdenes de Compra
 
-# API en Ruby on Rails que escribe los datos 
+### API en Ruby on Rails que escribe los datos 
 
 * Verificar que ruby (2.2.1) esté instalado. Si no existe Ruby, visitar https://www.ruby-lang.org/en/documentation/installation/
 $ ruby -v
@@ -27,7 +27,7 @@ $ rake db:migrate
 * Ejecutar el servidor 
 $ rails s
 
-# Proceso en python para realizar la descarga de Licitaciones desde api.chilecompra.cl por fecha
+###  Proceso en python para realizar la descarga de Licitaciones desde api.chilecompra.cl por fecha
 
 * Requerimientos: python 2.7 y pip. 
 
@@ -43,9 +43,8 @@ $ pip install -r requirements.txt
 * Ejecutar el programa 
 $ python parserLicitaciones.py  
 
-# Consideraciones 
+###  Consideraciones 
 
 * Es necesario modificar la BBDD de Tokens para poder acceder a la información. Los tokens de Chilecompra se obtienen desde http://api.mercadopublico.cl/participa.aspx
 * Para trabajar en entorno de producción, es necesario modificar el archivo config/application.yml 
 * Es posible parametrizar la fecha de inicio del scraper de Licitaciones, editando la línea 932 dl 
-
