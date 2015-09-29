@@ -1,0 +1,130 @@
+<form class="row">	
+	<div class="col-md-9">
+		<div class="upper-searchbar">
+			<div class="row ">
+				<div class="col col-sm-4">
+					<select class="selector no-search">
+						<option>Buscar por Todo</option>
+					  <option>Buscar por Licitaciones</option>
+					  <option>Buscar por Órdenes de Compra</option>
+					</select>
+				</div>
+				<div class="col col-sm-8">
+					<input type="text" class="form-control form-dark" placeholder="Buscar">
+				</div>
+			</div>
+		</div>
+
+		<div class="lower-searchbar">
+			<div class="row">
+				
+				<div class="col col-sm-4">
+					<div class="row">
+
+						<div class="col col-xs-2">
+							<div class="icon-box">
+								<i class="fa fa-usd"></i>
+							</div>
+						</div>
+
+						<div class="col col-xs-5">
+							<input type="number" class="form-control" placeholder="Desde"/>
+						</div>
+
+						<div class="col col-xs-5">
+							<input type="number" class="form-control" placeholder="Hasta"/>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col col-sm-4">
+					<select class="selector no-search">
+						<option>Estado 1</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>					
+				</div>
+				<div class="col col-sm-4">
+					<select class="selector no-search">
+						<option>2do Semestre 2015</option>
+						<option>1er Semestre 2015</option>
+						<option>2do Semestre 2014</option>
+						<option>1er Semestre 2014</option>
+						<option>2do Semestre 2013</option>
+						<option>1er Semestre 2013</option>
+					</select>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<button type="submit" class="btn btn-primary btn-searchbar btn-block">Buscar</button>
+	</div>
+</form>
+<div class="panel panel-grey">
+	<div class="panel-body ho">
+		<div class="row flex-wrapper">
+			
+			<div class="col-sm-8 flex-wrapper">
+				<ul class="list-unstyled filter-list transparent no-filters">
+					<li class="text-center no-filters"><i class="fa fa-file-o"></i>Aún no hay filtros aplicados</li>
+				</ul>
+
+				<ul class="list-unstyled filter-list transparent cosa-temporal">
+					<% 3.times do %>
+							<p class="info-tag">Regla</p>
+							<%= render partial:"filteritem" %>
+						<% end %>
+				</ul>
+
+				<div class="panel panel-color">
+
+
+					
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="panel panel-color panel-border">
+
+					<div class="panel-heading">
+						Agregar filtros
+					</div>
+
+					<div class="panel-body">						
+						<div class="margin-bottom">	
+							<select class="selector no-search full-width">
+								<option>Fecha de Apertura</option>
+								<option>Monto de Licitación</option>
+								<option>Duración</option>
+							</select>
+						</div>
+						<div class="margin-bottom">	
+							<select class="selector no-search full-width">
+								<option>Desde 01-01-2014</option>
+								<option>Condicional</option>
+								<option>Condicional</option>
+							</select>
+						</div>
+						<div>	
+							<select class="selector no-search full-width">
+								<option>Hasta 31-01-2014</option>
+								<option>Valor</option>
+								<option>Valor</option>
+							</select>	
+						</div>
+					</div>
+					
+					<div class="panel-footer">
+						<button class="btn btn-primary pull-right" id="addrule">+ Agregar Regla</button>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel-footer no-padding">
+		<div class="btn text-center ho-btn">Búsqueda avanzada <i class="fa fa-angle-down"></i></div>
+	</div>
+</div>

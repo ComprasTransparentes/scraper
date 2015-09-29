@@ -1,0 +1,355 @@
+<section class="container">
+
+	<div class="panel panel-default search-panel">
+		<div class="panel-body">
+			<h3>¡Bienvenido!</h3>
+			<p class="lead">Realiza una búsqueda para comenzar</p>
+			<!-- <p class="lead"><small>Puedes buscar lo que sea, incluso gatitos. No olvides, sin embargo, que <strong>elGatito</strong> es el mejor entre los gatitos.</small></p> -->
+			<%= render partial: "searchbar" %>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body welcome">
+			<h2>¿Qué es Compras Transparentes?</h2>
+			<p class="lead"><i class="fa fa-files-o back-fa"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+
+	<div class="panel panel-default stats">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Estadísticas</h3>
+					<p class="lead">Información de licitaciones y estadísticas</p>
+				</div>
+
+				<div class="col-md-6">
+				  <div class="btn-group pull-right pull-resp" data-toggle="buttons">
+					  <label class="btn btn-primary active">
+					    <input type="radio" name="options" id="option1" autocomplete="off" checked> Último semestre
+					  </label>
+					  <label class="btn btn-default">
+					    <input type="radio" name="options" id="option2" autocomplete="off"> Último año
+					  </label>
+					  <label class="btn btn-default">
+					    <input type="radio" name="options" id="option3" autocomplete="off"> Últimos dos años
+					  </label>
+					  <label class="btn btn-default">
+					    <input type="radio" name="options" id="option3" autocomplete="off"><i class="fa fa-calendar"></i>
+					  </label>
+					</div>
+				</div>
+			</div>
+
+			<span class="info-tag"></span>
+
+			<div class="panel panel-inverted">
+				<div class="panel-body">
+					
+					<div class="flex-wrapper">
+						<div class="info-box2">
+							<span class="value clp">240.675.000</span>
+							<p>Transado en licitaciones</p>
+						</div>
+						<div class="info-box2 text-center text-resp">
+							<span class="value">24.517</span>
+							<p>licitaciones adjudicadas</p>
+						</div>
+						<div class="info-box2 text-right text-resp">
+							<span class="value">86.348</span>
+							<p>Órdenes de compra emitidas</p>
+						</div>
+						<div class="info-box2">
+							<span class="value">1.024</span>
+							<p>Organismo licitando</p>
+						</div>
+						<div class="info-box2 text-right text-resp">
+							<span class="value">7.549</span>
+							<p>Proveedores participando</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Licitaciones más cuantiosas -->
+		<div class="panel-body">
+			<h4>Licitaciones más cuantiosas</h4>
+			<p>Lista de licitaciones más cuantiosas en el período de </p>
+
+			<div class="row filter-group">
+				<div class="col-sm-3">
+					<select class="selector standard">
+						<option>Todas las regiones</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>					
+				</div>
+				<div class="col-sm-3">
+					<select class="selector standard">
+						<option>Todos los ministerios</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>					
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" placeholder="Comprador">					
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" placeholder="Proveedor">					
+				</div>
+			</div>
+
+			<div class="row" id="licmascuantiosas">
+				<div class="col-sm-6">
+					<table class="table postulant-list">
+						<thead>
+							<td>Título</td>
+							<td>Monto</td>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Insumos médicos y medicamentos</td>
+								<td><span class="clp">200.000.000</span></td>
+							</tr>																					
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="col-sm-6">
+					
+					<div class="panel panel-inverted panel-drkblue">
+						<div class="panel-heading">
+							<span class="info-tag">Título licitación</span>
+
+							<div>
+								<h4 class="collapsable-text"><i class="fa fa-angle-double-right"></i>Insumos Medicos y Medicamentos.</h4>
+								<span>Código: 1509-5-L114</span>
+							</div>
+						</div>
+						<div class="panel-body">
+							
+
+							<div class="row">
+								<div class="col-md-6">
+									<span class="value">12</span>
+									<p>Órdenes de compra emitidas</p>
+								</div>
+								<div class="col-md-6">
+									<span class="value">27</span>
+									<p>Proveedores beneficiados</p>
+								</div>
+								<div class="col-md-6">
+									<span class="value clp">137.500</span>
+									<p>monto total</p>
+								</div>
+							</div>
+							
+							<br>
+
+							<div class="flex-wrapper">
+									<div class="info-box blue-box">
+										<span class="info-tag">tipo de convocatoria</span>
+										<p>Convocatoria Abierta</p>
+									</div>
+									<div class="info-box blue-box">	
+										<span class="info-tag">tipo de adjudicación</span>
+										<p>Adjudicación múltiple sin emisión de OC</p>
+									</div>
+							</div>
+						</div>
+
+						<div class="panel-footer transparent no-border">
+							<p class="pull-left">
+								<small><a href="#">Ir a ficha de licitación <i class="fa fa-arrow-circle-right"></i></a></small>
+							</p>
+							<p class="pull-right">
+								<small><a href="#">Comparar <i class="fa fa-files-o"></i></a></small>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Proveedores más beneficiados -->
+		<div class="panel-body">
+			<h4>Proveedores más beneficiados</h4>
+			<p>Lista de proveedores más beneficiados en el período de [período] </p>
+			
+			<div class="row filter-group">
+				<div class="col-sm-3">
+					<select class="selector standard">
+						<option>Todas las regiones</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>					
+				</div>
+				<div class="col-sm-3">
+					<select class="selector standard">
+						<option>Todos los ministerios</option>
+						<option>Estado 2</option>
+						<option>Estado 3</option>
+					</select>					
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" placeholder="Comprador">					
+				</div>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" placeholder="Producto/Servicio">
+				</div>
+			</div>
+
+			<div class="row" id="provmasbeneficiados">
+				<!-- Lista de proveedores -->
+				<div class="col-sm-6">
+					<table class="table postulant-list">
+						<thead>
+							<td>Nombre</td>
+							<td>Total facturado</td>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>
+							<tr>
+								<td>Comercializadora Ilhabella Eirl</td>
+								<td><span class="clp">45.000.000</span></td>
+							</tr>																					
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Show de proveedor seleccionado -->
+				<div class="col-sm-6">
+					
+					<div class="panel panel-inverted panel-drkblue">
+						<div class="panel-heading">
+							<span class="info-tag">Nombre Proveedor</span>
+					
+							<div>
+								<h4 class="collapsable-text"><i class="fa fa-angle-double-right"></i>Comercializadora Ilhabella Eirl</h4>
+								<span>Sucursal: 717107</span>
+								<span class="slash">RUT: 76.242.192-5</span>
+								<p><small>Av. Paul Harris 14164, Las Condes, Región Metropolitana</small></p>
+							</div>
+						</div>
+
+						<div class="panel-body">							
+
+							<div class="row">
+								<div class="col-md-6">
+									<span class="value clp">500.000.000</span>
+									<p>Facturado en ventas</p>
+								</div>
+								<div class="col-md-6">
+									<span class="value">27</span>
+									<p>Órdenes de compra adjudicadas</p>
+								</div>
+								<div class="col-md-6">
+									<span class="value clp">18.500.000</span>
+									<p>por orden promedio</p>
+								</div>
+								<div class="col-md-6">
+									<span class="value">4</span>
+									<p>organismos compradores</p>
+								</div>
+							</div>
+							
+							<br>
+
+						</div>
+
+						<div class="panel-footer transparent no-border">
+							<p class="pull-left">
+								<small><a href="#">Ir a ficha de proveedor <i class="fa fa-arrow-circle-right"></i></a></small>
+							</p>
+							<p class="pull-right">
+								<small><a href="#">Comparar <i class="fa fa-files-o"></i></a></small>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</section>

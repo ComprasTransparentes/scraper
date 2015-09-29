@@ -1,0 +1,32 @@
+<section class="container">
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#fichaLicitacion" aria-controls="fichaLicitacion" role="tab" data-toggle="tab">fichaLicitacion</a></lL>
+    <li role="presentation"><a href="#fichaOrdendeCompra" aria-controls="fichaOrdendeCompra" role="tab" data-toggle="tab">fichaOrdendeCompra</a></li>
+    <li role="presentation"><a href="#fichaOrganimos" aria-controls="fichaOrganimos" role="tab" data-toggle="tab">fichaOrganimos</a></li>
+    <li role="presentation"><a href="#fichaProveedor" aria-controls="fichaProveedor" role="tab" data-toggle="tab">fichaProveedor</a></li>
+  </ul>
+
+  <br>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="fichaLicitacion">
+    	<%= render partial:"fichalicitacion" %>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="fichaOrdendeCompra">
+    	<%= render partial:"fichaordendecompra" %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="fichaOrganimos">
+      <%= render partial:"fichaorganismo" %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="fichaProveedor">
+      <%= render partial:"fichaproveedor" %>
+    </div>
+  </div>
+	
+
+</section>
