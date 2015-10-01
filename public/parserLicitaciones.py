@@ -928,7 +928,7 @@ def buildLogs():
 if __name__ == "__main__":
     buildLogs()
     readTokens()
-    ##yyyymmdd
+    ##Modificar la fecha de inicio en formato yyyymmdd
     tender_scraper(dd.date(2015,8,26))
 
 
